@@ -1,1 +1,1 @@
-export function loGet(obj: any, path: string, defValue?: any): any;
+export function loGet(obj: any, path: string | string[], defValue?: any): any;

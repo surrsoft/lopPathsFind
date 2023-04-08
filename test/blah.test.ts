@@ -1,4 +1,6 @@
-import { sum } from '../src';
+function sum(a, b) {
+  return a + b;
+}
 
 describe('blah', () => {
   it('works', () => {

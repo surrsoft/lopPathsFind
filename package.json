@@ -1,6 +1,6 @@
 {
   "name": "loppathsfind",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "author": "surrsoft",
   "description": "analog of lodash path with support for arrays as path elements",
   "main": "dist/index.js",

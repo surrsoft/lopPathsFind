@@ -1,5 +1,5 @@
-import { loGet } from './loGet';
-import { loHas } from './loHas';
+import loGet from 'lodash/get';
+import loHas from 'lodash/has';
 
 export const ISARR = '$$$';
 

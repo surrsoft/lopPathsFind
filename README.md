@@ -28,11 +28,59 @@
       ```
 
 # Примеры
-1) пример 1
-    ```
+- пример 1, без 3-го параметра
+    ```typescript
+    import { ISARR, lopPathsFind } from 'loppathsfind';
+
+    const obj = {
+      a: [
+        { b: 1 },
+        { c: 2 },
+        { c: 3 },
+        { c: 2 },
+      ],
+    };
     
+    const lopPath = `a.${ISARR}.c`;
+    const result = lopPathsFind(obj, lopPath);
+   
+    // result
+   
+    /*
+    [
+      { path: 'a.0.c', value: undefined, isHas: false },
+      { path: 'a.1.c', value: 2, isHas: true },
+      { path: 'a.2.c', value: 3, isHas: true },
+      { path: 'a.3.c', value: 2, isHas: true }
+    ]
+    */
     ```
+- пример 2, с 3-м параметром
+    ```typescript
+    import { ISARR, lopPathsFind } from 'loppathsfind';
+
+    const obj = {
+      a: [
+        { b: 1 },
+        { c: 2 },
+        { c: 3 },
+        { c: 2 },
+      ],
+    };
     
+    const lopPath = `a.${ISARR}.c`;
+    const result = lopPathsFind(obj, lopPath, (val) => val === 2);
+   
+    // result
+   
+    /*
+    [
+      { path: 'a.1.c', value: 2, isHas: true },
+      { path: 'a.3.c', value: 2, isHas: true }
+    ]
+    */
+    ```
+- также см. тесты - `/test/lopPathsFind-ts.test.ts`
 
 # Разное
 - используемый пакет-менеджер - `yarn`

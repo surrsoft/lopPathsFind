@@ -19,7 +19,7 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "run-publish": "npm publish"
+    "run-publish": "yarn publish"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",

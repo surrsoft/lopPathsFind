@@ -1,6 +1,6 @@
 {
   "name": "loppathsfind",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "surrsoft",
   "description": "analog of lodash path with support for arrays as path elements",
   "main": "dist/index.js",
@@ -18,7 +18,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "run-publish": "npm publish"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",

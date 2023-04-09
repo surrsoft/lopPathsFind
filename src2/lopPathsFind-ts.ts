@@ -57,8 +57,8 @@ function findPaths(arr: string[], target: any) {
 }
 
 interface RetType {
-  path: string,
-  value: any
+  path: string;
+  value: any;
   /** существует ли указанный path */
   isHas: boolean;
 }

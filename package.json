@@ -1,6 +1,6 @@
 {
   "name": "loppathsfind",
-  "version": "1.6.4",
+  "version": "1.6.5",
   "author": "surrsoft",
   "description": "analog of lodash path with support for arrays as path elements",
   "main": "dist/index.js",
@@ -64,5 +64,10 @@
       "path": "dist/loppathsfind.esm.js",
       "limit": "10 KB"
     }
+  ],
+  "keywords": [
+    "lodash",
+    "get value",
+    "structure"
   ]
 }

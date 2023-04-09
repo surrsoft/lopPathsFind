@@ -1,15 +1,16 @@
 {
-  "version": "1.0.0",
-  "license": "MIT",
+  "name": "loppathsfind",
+  "version": "1.0.1",
+  "author": "surrsoft",
+  "description": "analog of lodash path with support for arrays as path elements",
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
   "files": [
     "dist",
     "src"
   ],
-  "engines": {
-    "node": ">=10"
-  },
+  "typings": "dist/index.d.ts",
+  "repository": "https://github.com/surrsoft/lopPathsFind",
+  "module": "dist/loppathsfind.esm.js",
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -19,31 +20,6 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
-  "peerDependencies": {},
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
-  "name": "loppathsfind",
-  "author": "surrsoft",
-  "module": "dist/loppathsfind.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/loppathsfind.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/loppathsfind.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
@@ -57,5 +33,30 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.5.0",
     "typescript": "^5.0.3"
-  }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "size-limit": [
+    {
+      "path": "dist/loppathsfind.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/loppathsfind.esm.js",
+      "limit": "10 KB"
+    }
+  ]
 }
